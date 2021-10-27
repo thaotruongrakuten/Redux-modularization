@@ -1,6 +1,8 @@
 # Redux-modularization
 
-Idea: https://github.com/ReSwift/ReSwift/issues/377
+Idea: 
+- https://github.com/ReSwift/ReSwift/issues/377
+- https://github.com/Rakuten-MTSD-PAIS/mavenir-android-client-snapshot/pull/4012/files
 
 1 store.
 
