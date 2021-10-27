@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         let embeddedRoomView = RoomView<Store<AppState>>(frame: roomView.bounds)
         embeddedRoomView.store = mainStore
         roomView.addSubview(embeddedRoomView)
+
+        embeddedRoomView.increaseCounterCallback = {
+            mainStore.dispatch(CounterActionIncrease())
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
