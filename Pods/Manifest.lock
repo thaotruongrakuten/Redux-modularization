@@ -1,0 +1,16 @@
+PODS:
+  - ReSwift (6.1.0)
+
+DEPENDENCIES:
+  - ReSwift
+
+SPEC REPOS:
+  trunk:
+    - ReSwift
+
+SPEC CHECKSUMS:
+  ReSwift: eab3c01e4279ba81b54a61e4fd6499634d20123a
+
+PODFILE CHECKSUM: 497f208555f7fe1a352b2cb391473da18ba79a81
+
+COCOAPODS: 1.9.3
