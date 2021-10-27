@@ -10,6 +10,8 @@ Each feature module has:
 
 All state definations and protocols are defined in Contract module (can be seperated to CounterContract, RoomContract...).
 
-Problem: Cannot use storyboard or nib file (investigating...)
-
 ![Workflow](redux.png)
+
+## On going:
+- Problem: Cannot use storyboard or nib file (investigating...)
+- Try injecting store for whole module (eg. `Room.config(store: mainStore)`) - now only inject when creating UIView
