@@ -9,6 +9,7 @@ import UIKit
 import ReSwift
 import Counter
 import Room
+import Contract
 
 class ViewController: UIViewController {
 
@@ -17,9 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let embeddedRoomView = RoomView<Store<AppState>>(frame: roomView.bounds)
-        embeddedRoomView.store = mainStore
+
+        let embeddedRoomView = RoomView(frame: roomView.bounds)
         roomView.addSubview(embeddedRoomView)
 
         embeddedRoomView.increaseCounterCallback = {

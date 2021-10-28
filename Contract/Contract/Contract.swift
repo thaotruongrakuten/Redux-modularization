@@ -13,16 +13,18 @@ public struct RoomState {
     public init() {}
 }
 
-public protocol HasRoom {
-    var roomState: RoomState { get }
-}
-
 public struct CounterState {
     public var counter: Int = 0
 
     public init() {}
 }
 
-public protocol HasCounter {
-    var counterState: CounterState { get }
+public struct AppState {
+    public let counterState: CounterState
+    public let roomState: RoomState
+
+    public init(counterState: CounterState, roomState: RoomState) {
+        self.counterState = counterState
+        self.roomState = roomState
+    }
 }

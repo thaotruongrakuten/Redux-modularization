@@ -12,6 +12,7 @@
 		151A07B227291BA0001C9900 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A07B127291BA0001C9900 /* RoomView.swift */; };
 		151A07DB27292B8E001C9900 /* Contract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151A07DA27292B8E001C9900 /* Contract.framework */; };
 		151A07DC27292B8E001C9900 /* Contract.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 151A07DA27292B8E001C9900 /* Contract.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		151A07E5272A4708001C9900 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151A07E4272A4708001C9900 /* Store.swift */; };
 		1578BA302729191F00F881E0 /* Room.h in Headers */ = {isa = PBXBuildFile; fileRef = 1578BA2E2729191F00F881E0 /* Room.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D11030818A42FBD1F9A69616 /* Pods_Room.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD545FF33609F215B9AF537 /* Pods_Room.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		151A07A3272919FB001C9900 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		151A07B127291BA0001C9900 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
 		151A07DA27292B8E001C9900 /* Contract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Contract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		151A07E4272A4708001C9900 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		1578BA2B2729191F00F881E0 /* Room.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Room.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1578BA2E2729191F00F881E0 /* Room.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
 		1578BA2F2729191F00F881E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			children = (
 				151A07A0272919A5001C9900 /* Action.swift */,
 				151A07A3272919FB001C9900 /* Reducer.swift */,
+				151A07E4272A4708001C9900 /* Store.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				151A07B227291BA0001C9900 /* RoomView.swift in Sources */,
 				151A07A1272919A5001C9900 /* Action.swift in Sources */,
 				151A07A4272919FB001C9900 /* Reducer.swift in Sources */,
+				151A07E5272A4708001C9900 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

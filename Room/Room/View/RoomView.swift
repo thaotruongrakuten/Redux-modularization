@@ -9,18 +9,7 @@ import UIKit
 import ReSwift
 import Contract
 
-public class RoomView<S: StoreType>: UIView where S.State: HasRoom & HasCounter {
-
-    public var store: S?
-    {
-        didSet {
-            store?.subscribe(self)
-            {
-                $0.select { (room: $0.roomState, counter: $0.counterState) }
-            }
-        }
-    }
-
+public class RoomView: UIView {
     public var increaseCounterCallback: (() -> Void)?
 
     lazy var numPeopleLabel: UILabel = {
@@ -62,6 +51,10 @@ public class RoomView<S: StoreType>: UIView where S.State: HasRoom & HasCounter 
         addSubview(openningStatusLabel)
         addSubview(increaseCounterButton)
         setupLayout()
+
+        roomStore?.subscribe(self) {
+            $0.select { (room: $0.roomState, counter: $0.counterState) }
+        }
     }
     
     private func setupLayout() {
@@ -85,7 +78,7 @@ public class RoomView<S: StoreType>: UIView where S.State: HasRoom & HasCounter 
     }
     
     deinit {
-        store?.unsubscribe(self)
+        roomStore?.unsubscribe(self)
     }
 }
 

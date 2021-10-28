@@ -9,6 +9,7 @@ import Foundation
 import ReSwift
 import Counter
 import Room
+import Contract
 
 func appReducer(action: Action, state: AppState?) -> AppState {
     return AppState(

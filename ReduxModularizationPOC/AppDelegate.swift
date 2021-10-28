@@ -7,6 +7,8 @@
 
 import UIKit
 import ReSwift
+import Contract
+import Room
 
 let mainStore = Store<AppState>(reducer: appReducer, state: nil)
 
@@ -15,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // Inject feature store to Room module
+        Room.roomStore = mainStore
         return true
     }
 

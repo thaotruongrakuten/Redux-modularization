@@ -17,7 +17,6 @@
 		1578B99F27290B8400F881E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1578B99D27290B8400F881E0 /* Main.storyboard */; };
 		1578B9A127290B8400F881E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1578B9A027290B8400F881E0 /* Assets.xcassets */; };
 		1578B9A427290B8400F881E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1578B9A227290B8400F881E0 /* LaunchScreen.storyboard */; };
-		1578B9B327290C7500F881E0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578B9B227290C7500F881E0 /* State.swift */; };
 		1578B9BA27290CA900F881E0 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578B9B927290CA900F881E0 /* Reducer.swift */; };
 		1578BA1F2729153000F881E0 /* Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1578BA042729107700F881E0 /* Counter.framework */; };
 		1578BA202729153000F881E0 /* Counter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1578BA042729107700F881E0 /* Counter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -74,7 +73,6 @@
 		1578B9A027290B8400F881E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1578B9A327290B8400F881E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1578B9A527290B8400F881E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1578B9B227290C7500F881E0 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		1578B9B927290CA900F881E0 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		1578B9D527290F4600F881E0 /* Counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1578B9FF2729107700F881E0 /* Counter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Counter.xcodeproj; path = Counter/Counter.xcodeproj; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 		1578B9B127290C6B00F881E0 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
-				1578B9B227290C7500F881E0 /* State.swift */,
 				1578B9B927290CA900F881E0 /* Reducer.swift */,
 			);
 			path = Redux;
@@ -343,7 +340,6 @@
 				1578B99827290B8400F881E0 /* AppDelegate.swift in Sources */,
 				1578B9BA27290CA900F881E0 /* Reducer.swift in Sources */,
 				1578B99A27290B8400F881E0 /* SceneDelegate.swift in Sources */,
-				1578B9B327290C7500F881E0 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
